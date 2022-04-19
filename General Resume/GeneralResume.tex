@@ -1,0 +1,323 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hanging}
+\usepackage{fontawesome}
+\usepackage{multicol}
+
+\input{glyphtounicode}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingTwo}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingZero}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{lr}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabularx}{0.97\textwidth}{X@{\hskip 1.5cm}r}
+      \small{#1} & \small{#2} \\
+    \end{tabularx}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\fancypagestyle{clearance}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\fancyfoot[L]{
+    \small{\faLock \, Active Top-Secret Security Clearance}
+}}
+
+
+
+
+
+\begin{document}
+
+\setlength{\footskip}{8mm}      % increase footer padding a bit
+\thispagestyle{clearance}
+
+
+%----------HEADING----------
+% \begin{center}
+%     \textbf{\Huge \scshape Russell Schwartz} \\ \vspace{2pt}
+%     \small \faPhoneSquare \, 443-472-8770 \quad \faEnvelope \, \href{mailto:russell.w.schwartz@gmail.com}{russell.w.schwartz@gmail.com} \quad \faGithubSquare \, \href{https://github.com/rschwa6308}{github.com/rschwa6308} \\
+% \end{center}
+
+% \begin{center}
+%     \textbf{\Huge \scshape Russell Schwartz} \\ \vspace{5pt}
+%     \small \faPhone \, 443-472-8770 \quad \faEnvelope \, \href{mailto:russell.w.schwartz@gmail.com}{russell.w.schwartz@gmail.com} \quad \faGithub \, \href{https://github.com/rschwa6308}{github.com/rschwa6308} \\
+% \end{center}
+
+\begin{center}
+    \textbf{\Huge \scshape Russell Schwartz} \\ \vspace{5pt}
+    \small \faPhone \, 443-472-8770 \quad \faEnvelope \, \href{mailto:russell.w.schwartz@gmail.com}{russell.w.schwartz@gmail.com} \quad \faHandORight \, \href{www.russ-stuff.com}{www.russ-stuff.com} \\
+\end{center}
+
+
+
+%----------------EDUCATION----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingTwo
+      {Carnegie Mellon University}{Pittsburgh, PA}
+      {Master of Science in Robotics}{Aug 2022 -- Aug 2024}
+      {Research Lab/Advisor: TBD}{}
+    
+    \medskip
+
+    \resumeSubheadingTwo
+      {University of Maryland}{College Park, MD}
+      {Bachelor of Science in Computer Science}{Aug 2018 -- May 2022}
+      {Bachelor of Science in Mathematics}
+    
+    \resumeSubSubheading
+    % {\textbf{Honors}: \emph{Summa Cum Laude}}{4.00 GPA}
+    {\textbf{Honors}: \emph{Summa Cum Laude} - 4.00 GPA}{}
+
+    %   \resumeSubSubheading
+    % {\textbf{Gemstone Honors College} -- Advanced Computer Systems, Algorithms II, Data Structures, Machine Learning, Computational Geometry, Natural Language Processing, Real Analysis II, Complex Analysis, Abstract Algebra, Advanced Linear Algebra, Cryptography, Combinatorics \& Graph Theory, Advanced Math Logic, etc.}{4.0 GPA}
+    
+  \resumeSubHeadingListEnd
+
+\vspace{0.5pt}
+
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {APL Intelligent Systems Intern}{May 2021 -- Aug 2021}
+      {Johns Hopkins Applied Physics Laboratory}{Laurel, MD}
+      \resumeItemListStart
+        \resumeItem{Developed tooling to optimize the flight-plan of fixed-wing aircraft under a complex objective function involving the communication between an onboard device and an orbital satellite. Utilized SNOPT and OTIS to search the space of physically feasible solutions with the help of custom tooling written in both Fortran and Python. Helped with integration of the new tool into an existing desktop architecture for use in the field.}
+        \resumeItem{Created a system for testing automated network security analysis tools (such as APL's AVRA) on simulated networks repeatably. The user specifies network topology, OS types, and software distributions, and the resulting network is automatically virtualized via Docker and GNS3, and the testing procedure is run autonomously.}
+      \resumeItemListEnd
+  
+    \resumeSubheading
+      {NASA Robotics \& Artificial Intelligence Intern}{Jan 2021 -- April 2021}
+      {NASA Jet Propulsion Laboratory}{Pasadena, CA}
+      \resumeItemListStart
+        \resumeItem{Researched various methods for terrain-relative navigation using monocular cameras for robots operating in GPS-denied areas on Earth and for planetary rovers on Mars, resulting in a number of publications}
+        \resumeItem{Developed robust methods for extracting salient terrain features (e.g. the peak of a distant mountain) from an image via semantic segmentation with DeepLab as well as traditional computer vision techniques}
+        \resumeItem{Studied the effectiveness of using observed features (in conjunction with an accurate map of the area) to estimate pose. Developed plugins for QGIS that automatically detect potential landmarks from a DEM, analyze their visibility, and compute localization accuracy for every point in the scene. Applied these techniques/tooling to imagery from Perseverance's Navcams and DEMs of Jezero Crater, resulting in a predicted localization accuracy in the 10s of meters}
+      \resumeItemListEnd
+  
+    \resumeSubheading
+      {Software Development Intern}{May 2019 -- Aug 2019}
+      {Ncyber LLC}{Columbia, MD}
+      \resumeItemListStart
+        \resumeItem{Developed a network analysis app for Android mobile devices that tests network speed and stability, aggregating user data across multiple devices and carriers}
+        % \resumeItem{Worked effectively in a small team by employing agile development principles, source control, and issue tracking}
+        \resumeItem{Implemented various real-time data-visualizations including a geographic heatmap of aggregate internet coverage}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Software Development \& Data Analysis Intern}{April 2018 -- March 2019}
+      {Treble Network}{Baltimore, MD}
+      \resumeItemListStart
+        \resumeItem{Developed and tested applications for iOS, Android, and Web, contributing to the core design of a new online business networking platform}
+        \resumeItem{Analyzed customer analytics using Firebase, Excel, and Python}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Audio-Visual Technologies Intern}{June 2016 -- Aug 2016}
+      {Vision Technologies}{Glen Burnie, MD}
+      \resumeItemListStart
+        \resumeItem{Aggregated technical specifications for enterprise-grade AV hardware}
+        \resumeItem{Worked with hardware experts to determine requirements for a given application, and aided in installation}
+      \resumeItemListEnd
+     
+    \resumeSubHeadingListEnd
+
+\pagebreak
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{Other Research}
+% \vspace{-15pt}
+\hspace{8pt}
+\begin{minipage}[t]{0.46\textwidth}
+    \textbf{UMD Robotics: RAAS Lab} \hspace{\fill} Aug 2019 -- May 2022
+    
+    \setlength{\parindent}{15pt}
+    {\small Investigated task-allocation algorithms for multi-agent robotic systems. Worked to answer the question of how to assign agents to tasks in highly failure-prone environments where cooperation leads to higher chance of success. Presented findings on stochastic and adversarial failure models at RSS 2020, including efficient algorithms that yield optimal or near-optimal results.}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.46\textwidth}
+    \textbf{Gemstone Team LEMMA} \hspace{\fill} Aug 2018 -- May 2022
+    
+    \setlength{\parindent}{15pt}
+    {\small Worked with a team of other undergraduates to develop novel methods to automatically detect and then model the spread of extremism in niche online communities. Framed the problem as an economic trade model on a graph of social connections. Implemented sophisticated NLP tools to automatically identify extreme content in a >5TB dataset. Culminated in a thesis presentation.}
+\end{minipage}
+\hspace{8pt}
+
+
+
+% %-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+%           \resumeItemListStart
+%             \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+%             \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+%             \resumeItem{Visualized GitHub data to show collaboration}
+%             \resumeItem{Used Celery and Redis for asynchronous tasks}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+%           \resumeItemListStart
+%             \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+%             \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+%             \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+%             \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+\small{
+    \begin{itemize}
+        \item J. Vander Hook, R. Schwartz, K. Ebadi, K. Coble, and C. Padgett, “Topographical landmarks for ground-level terrain relative navigation on mars,” in 2022 IEEEAerospace Conference, 2022.
+
+        \item K. Ebadi, K. Coble, D. Kogan, D. Atha, R. Schwartz, C. Padgett, and J. Vander Hook, “Semantic  mapping in unstructured environments:  Toward autonomous localization of planetary robotic explorers,” in 2022 IEEEAerospace Conference, 2022.
+
+        \item Schwartz, R., \& Tokekar, P. “Robust Multi-Agent Task Assignment in Failure-Prone and Adversarial Environments” in \textit{Robotics: Science and Systems}, 2020
+
+        \item Schwartz, R., Long, M. “Deriving unexpected mathematical constants from Pascal’s Triangle”. \textit{HCC Journal of Research in Progress, First Edition}, 2017
+    \end{itemize}
+    
+}
+
+
+
+\section{Leadership \& Volunteer Work}
+    % TODO: fix em dash width issue
+    \begin{itemize}
+        % \item \textbf{Planet App} -- 
+        \item \textbf{Boy Scouts of America} -- Served as Patrol Leader, Quartermaster, and Senior Patrol Leader for Boy Scout troop. Oversaw 80 younger scouts while organizing weekly meetings, camping trips, and service projects. (2012 – 2018)
+        \item \textbf{Math Team Captain} – Participated for 4 years in Howard High School mathematics team. Led the team to win first place in the division senior year. (2013 - 2017)
+        \item \textbf{Math Honor Society Vice President} – Organized meetings and wrote challenge problems for ~100 students. (2014 – 2017)
+        \item \textbf{MS Chesapeake Challenge} – Participated in a charity event for the National Multiple Sclerosis Society by raising over \$1,000 for MS research. Participated in the metric century bike ride and volunteered at rest stops.  (June 2016, 2017, and 2018)
+    \end{itemize}
+
+
+\section{Honors}
+    \vspace{-15pt}
+    \begin{tabularx}{\textwidth}{XXX}
+        \begin{itemize}
+            \itemsep 0pt
+            \item UMD Banneker/Key Scholarship
+            \item UMD Computer Science Dept. Honors
+            \item ICPC 2018 Regional Finalist
+        \end{itemize} &
+        \begin{itemize}
+            \itemsep 0pt
+            \item National Merit Scholar
+            \item Math, Tech, Science Honor Societies
+            \item Winston Family Writing Award
+        \end{itemize} &
+        \begin{itemize}
+            \itemsep 0pt
+            \item BSA: Order of The Arrow
+            \item First place at \textit{HoCo Hacks} `16 \& `17
+            \item John Lockwood Mathematics Award
+        \end{itemize}
+    \end{tabularx}
+    \vspace{-10pt}
+
+
+\end{document}
