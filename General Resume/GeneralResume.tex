@@ -58,6 +58,7 @@
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
+
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
@@ -80,7 +81,7 @@
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
       \textit{\small#5}
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}%\vspace{-7pt}
 }
 
 \newcommand{\resumeSubheadingZero}[2]{
@@ -109,9 +110,13 @@
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+  
+% \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
 
 
 
@@ -142,9 +147,15 @@
 
 \begin{center}
     \textbf{\Huge \scshape Russell Schwartz} \\ \vspace{5pt}
-    \small \faPhone \, 443-472-8770 \quad \faEnvelope \, \href{mailto:russell.w.schwartz@gmail.com}{russell.w.schwartz@gmail.com} \quad \faHandORight \, \href{www.russ-stuff.com}{www.russ-stuff.com} \\
+    \small \faPhone \, 443-472-8770 \quad \faEnvelope \, \href{mailto:russell.w.schwartz@gmail.com}{russell.w.schwartz@gmail.com} \quad \faCloud \, \href{www.russ-stuff.com}{www.russ-stuff.com} \\
 \end{center}
 
+% Options for website icon
+% - \faHandORight
+% - \faGlobe
+% - \faLink
+% - \faCloud
+% - \faHome
 
 
 %----------------EDUCATION----------------
@@ -154,13 +165,13 @@
       {Carnegie Mellon University}{Pittsburgh, PA}
       {Master of Science in Robotics}{Aug 2022 -- Aug 2024}
       {Research Lab/Advisor: TBD}{}
-    
-    \medskip
 
     \resumeSubheadingTwo
       {University of Maryland}{College Park, MD}
       {Bachelor of Science in Computer Science}{Aug 2018 -- May 2022}
       {Bachelor of Science in Mathematics}
+
+    \vspace*{-5pt}
     
     \resumeSubSubheading
     % {\textbf{Honors}: \emph{Summa Cum Laude}}{4.00 GPA}
@@ -171,7 +182,7 @@
     
   \resumeSubHeadingListEnd
 
-\vspace{0.5pt}
+\vspace{-5pt}
 
 
 %-----------PROFESSIONAL EXPERIENCE-----------
@@ -183,7 +194,7 @@
       {Johns Hopkins Applied Physics Laboratory}{Laurel, MD}
       \resumeItemListStart
         \resumeItem{Developed tooling to optimize the flight-plan of fixed-wing aircraft under a complex objective function involving the communication between an onboard device and an orbital satellite. Utilized SNOPT and OTIS to search the space of physically feasible solutions with the help of custom tooling written in both Fortran and Python. Helped with integration of the new tool into an existing desktop architecture for use in the field.}
-        \resumeItem{Created a system for testing automated network security analysis tools (such as APL's AVRA) on simulated networks repeatably. The user specifies network topology, OS types, and software distributions, and the resulting network is automatically virtualized via Docker and GNS3, and the testing procedure is run autonomously.}
+        \resumeItem{Created a system for testing automated network security analysis tools (such as APL's AVRA) on simulated networks repeatably. Network topology, OS types, and software distributions may be specified. The resulting network is automatically virtualized via Docker and GNS3, and the testing procedure is run autonomously.}
       \resumeItemListEnd
   
     \resumeSubheading
@@ -232,7 +243,7 @@
     \textbf{UMD Robotics: RAAS Lab} \hspace{\fill} Aug 2019 -- May 2022
     
     \setlength{\parindent}{15pt}
-    {\small Investigated task-allocation algorithms for multi-agent robotic systems. Worked to answer the question of how to assign agents to tasks in highly failure-prone environments where cooperation leads to higher chance of success. Presented findings on stochastic and adversarial failure models at RSS 2020, including efficient algorithms that yield optimal or near-optimal results.}
+    {\small Investigated task-allocation algorithms for multi-agent robotic systems. Worked to answer the question of how to assign agents to tasks in highly failure-prone (and even adversarial) environments where cooperation leads to higher chance of success. Presented findings at RSS 2020, including efficient algorithms that yield optimal/near-optimal results along with observed performance under simulation.}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.46\textwidth}
@@ -267,6 +278,7 @@
 %     \resumeSubHeadingListEnd
 
 
+
 %-----------PUBLICATIONS-----------
 \section{Publications}
 \small{
@@ -284,17 +296,19 @@
 
 
 
+%-----------LEADSERSHIP & VOLUNTEERING-----------
 \section{Leadership \& Volunteer Work}
-    % TODO: fix em dash width issue
-    \begin{itemize}
-        % \item \textbf{Planet App} -- 
-        \item \textbf{Boy Scouts of America} -- Served as Patrol Leader, Quartermaster, and Senior Patrol Leader for Boy Scout troop. Oversaw 80 younger scouts while organizing weekly meetings, camping trips, and service projects. (2012 - 2018)
-        \item \textbf{Math Team Captain} -- Participated for 4 years in Howard High School mathematics team. Led the team to win first place in the division senior year. (2013 - 2017)
-        \item \textbf{Math Honor Society Vice President} -- Organized meetings and wrote challenge problems for ~100 students. (2014 - 2017)
-        \item \textbf{MS Chesapeake Challenge} -- Participated in a charity event for the National Multiple Sclerosis Society by raising over \$1,000 for MS research. Participated in the metric century bike ride and volunteered at rest stops.  (June 2016, 2017, and 2018)
-    \end{itemize}
+  \begin{itemize}
+      % \item \textbf{Planet App} -- 
+      \item \textbf{Boy Scouts of America} -- Served as Patrol Leader, Quartermaster, and Senior Patrol Leader for Boy Scout troop. Oversaw 80 younger scouts while organizing weekly meetings, camping trips, and service projects. (2012 - 2018)
+      \item \textbf{Math Team Captain} -- Participated for 4 years in Howard High School mathematics team. Led the team to win first place in the division senior year. (2013 - 2017)
+      \item \textbf{Math Honor Society Vice President} -- Organized meetings and wrote challenge problems for ~100 students. (2014 - 2017)
+      \item \textbf{MS Chesapeake Challenge} -- Participated in a charity event for the National Multiple Sclerosis Society by raising over \$1,000 for MS research. Participated in the metric century bike ride and volunteered at rest stops.  (June 2016, 2017, and 2018)
+  \end{itemize}
 
 
+
+%-----------HONORS-----------
 \section{Honors}
     \vspace{-15pt}
     \begin{tabularx}{\textwidth}{XXX}
