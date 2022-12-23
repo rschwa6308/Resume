@@ -163,8 +163,10 @@
   \resumeSubHeadingListStart
     \resumeSubheadingTwo
       {Carnegie Mellon University}{Pittsburgh, PA}
-      {Master of Science in Robotics}{Aug 2022 -- Aug 2024}
-      {Research Lab/Advisor: TBD}{}
+      {Master of Science in Computer Science}{Aug 2022 -- Aug 2024}
+      {}{}
+
+      \vspace*{-10pt}
 
     \resumeSubheadingTwo
       {University of Maryland}{College Park, MD}
@@ -193,17 +195,17 @@
       {APL Intelligent Systems Intern}{May 2021 -- Aug 2021}
       {Johns Hopkins Applied Physics Laboratory}{Laurel, MD}
       \resumeItemListStart
-        \resumeItem{Developed tooling to optimize the flight-plan of fixed-wing aircraft under a complex objective function involving the communication between an onboard device and an orbital satellite. Utilized SNOPT and OTIS to search the space of physically feasible solutions with the help of custom tooling written in both Fortran and Python. Helped with integration of the new tool into an existing desktop architecture for use in the field.}
-        \resumeItem{Created a system for testing automated network security analysis tools (such as APL's AVRA) on simulated networks repeatably. Network topology, OS types, and software distributions may be specified. The resulting network is automatically virtualized via Docker and GNS3, and the testing procedure is run autonomously.}
+        \resumeItem{Developed tooling to optimize the flight-plan of fixed-wing aircraft under a complex objective function involving the communication between an onboard device and an orbital satellite. Utilized SNOPT and OTIS to search the space of physically feasible solutions with the help of custom tooling written in both Fortran and Python for non-linear optimiation. Helped with integration of the new tool into an existing desktop architecture for use in the field.}
+        \resumeItem{Created a system for testing automated network security analysis tools (such as APL's AVRA) on simulated networks repeatably. Network parameters include overall topology, OS types/versions, and software distributions. The resulting network is automatically virtualized via Docker and GNS3, and the testing procedure is run autonomously.}
       \resumeItemListEnd
   
     \resumeSubheading
       {NASA Robotics \& Artificial Intelligence Intern}{Jan 2021 -- April 2021}
       {NASA Jet Propulsion Laboratory}{Pasadena, CA}
       \resumeItemListStart
-        \resumeItem{Researched various methods for terrain-relative navigation using monocular cameras for robots operating in GPS-denied areas on Earth and for planetary rovers on Mars, resulting in a number of publications}
-        \resumeItem{Developed robust methods for extracting salient terrain features (e.g. the peak of a distant mountain) from an image via semantic segmentation with DeepLab as well as traditional computer vision techniques}
-        \resumeItem{Studied the effectiveness of using observed features (in conjunction with an accurate map of the area) to estimate pose. Developed plugins for QGIS that automatically detect potential landmarks from a DEM, analyze their visibility, and compute localization accuracy for every point in the scene. Applied these techniques/tooling to imagery from Perseverance's Navcams and DEMs of Jezero Crater, resulting in a predicted localization accuracy in the 10s of meters}
+        \resumeItem{Worked with JPL roboticists to investigate various methods for terrain-relative navigation using monocular cameras for robots operating in GPS-denied areas on Earth and for planetary rovers on Mars, resulting in several publications}
+        \resumeItem{Developed robust methods for extracting salient terrain features (e.g. the peak of a distant mountain) from an RGB image via semantic segmentation with DeepLab as well as traditional computer vision techniques}
+        \resumeItem{Studied the effectiveness of using observed features (in conjunction with an accurate map of the area) to estimate robot pose. Developed plugins for QGIS to automatically detect potential landmarks from a DEM, analyze visibility, and compute localization accuracy for every point in the scene. Applied these tools to imagery from Perseverance's Navcams and DEMs of Jezero Crater, resulting in a predicted localization accuracy in the 10s of meters}
       \resumeItemListEnd
   
     \resumeSubheading
@@ -236,21 +238,28 @@
 \pagebreak
 
 %-----------RESEARCH EXPERIENCE-----------
-\section{Other Research}
+\section{Other Research Experience}
 % \vspace{-15pt}
-\hspace{8pt}
-\begin{minipage}[t]{0.46\textwidth}
+\begin{minipage}[t]{0.48\textwidth}
+  \textbf{CMU Robotics: AART Lab} \hspace{\fill} Sep 2022 -- Present
+  
+  \setlength{\parindent}{15pt}
+  {\small Worked under Dr. Katia Sycara on a project involving the deployment of a team of robots for simultaneous exploration and monitoring of a dynamic spatio-temporal environment. Phenomenon of interest were modeled using a mixture of gaussian processes, from which optimal sampling trajectories can be computed. Research is ongoing to investigate methods for learning underlying spatio-temporal correlations. }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
     \textbf{UMD Robotics: RAAS Lab} \hspace{\fill} Aug 2019 -- May 2022
     
     \setlength{\parindent}{15pt}
     {\small Investigated task-allocation algorithms for multi-agent robotic systems. Worked to answer the question of how to assign agents to tasks in highly failure-prone (and even adversarial) environments where cooperation leads to higher chance of success. Presented findings at RSS 2020, including efficient algorithms that yield optimal/near-optimal results along with observed performance under simulation.}
 \end{minipage}
-\hfill
-\begin{minipage}[t]{0.46\textwidth}
+
+\vspace{12pt}
+\begin{minipage}[t]{0.48\textwidth}
     \textbf{Gemstone Team LEMMA} \hspace{\fill} Aug 2018 -- May 2022
     
     \setlength{\parindent}{15pt}
-    {\small Worked with a team of other undergraduates at UMD to develop novel methods to automatically detect and then model the spread of extremism in niche online communities. Framed the problem as an economic trade model on a graph of social connections. Implemented sophisticated NLP tools to automatically identify extreme content in a >5TB dataset. Culminated in a thesis presentation.}
+    {\small Worked with a team of other undergraduates at UMD to develop novel methods to automatically detect and then model the spread of extremism in niche online communities. Framed the problem as an economic trade model on a graph of social connections. Implemented sophisticated NLP tools (e.g. BERT) to automatically identify extreme content in a >5TB dataset. Culminated in a thesis presentation.}
 \end{minipage}
 \hspace{8pt}
 
@@ -296,15 +305,15 @@
 
 
 
-%-----------LEADSERSHIP & VOLUNTEERING-----------
-\section{Leadership \& Volunteer Work}
-  \begin{itemize}
-      % \item \textbf{Planet App} -- 
-      \item \textbf{Boy Scouts of America} -- Served as Patrol Leader, Quartermaster, and Senior Patrol Leader for Boy Scout troop. Oversaw 80 younger scouts while organizing weekly meetings, camping trips, and service projects. (2012 - 2018)
-      \item \textbf{Math Team Captain} -- Participated for 4 years in Howard High School mathematics team. Led the team to win first place in the division senior year. (2013 - 2017)
-      \item \textbf{Math Honor Society Vice President} -- Organized meetings and wrote challenge problems for ~100 students. (2014 - 2017)
-      \item \textbf{MS Chesapeake Challenge} -- Participated in a charity event for the National Multiple Sclerosis Society by raising over \$1,000 for MS research. Participated in the metric century bike ride and volunteered at rest stops.  (June 2016, 2017, and 2018)
-  \end{itemize}
+% %-----------LEADSERSHIP & VOLUNTEERING-----------
+% \section{Leadership \& Volunteer Work}
+%   \begin{itemize}
+%       % \item \textbf{Planet App} -- 
+%       \item \textbf{Boy Scouts of America} -- Served as Patrol Leader, Quartermaster, and Senior Patrol Leader for Boy Scout troop. Oversaw 80 younger scouts while organizing weekly meetings, camping trips, and service projects. (2012 - 2018)
+%       \item \textbf{Math Team Captain} -- Participated for 4 years in Howard High School mathematics team. Led the team to win first place in the division senior year. (2013 - 2017)
+%       \item \textbf{Math Honor Society Vice President} -- Organized meetings and wrote challenge problems for ~100 students. (2014 - 2017)
+%       \item \textbf{MS Chesapeake Challenge} -- Participated in a charity event for the National Multiple Sclerosis Society by raising over \$1,000 for MS research. Participated in the metric century bike ride and volunteered at rest stops.  (June 2016, 2017, and 2018)
+%   \end{itemize}
 
 
 
