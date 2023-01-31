@@ -1,0 +1,400 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hanging}
+\usepackage{fontawesome}
+\usepackage{multicol}
+
+\input{glyphtounicode}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+% align bullets to the left margin
+\setlist[itemize]{align=parleft,left=0pt..1em}
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-4pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeSubheadingTwo}[5]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5}
+    \end{tabular*}%\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingZero}[2]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{lr}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabularx}{0.97\textwidth}{X@{\hskip 1.5cm}r}
+      \small{#1} & \small{#2} \\
+    \end{tabularx}\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-5pt}}
+
+% \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{-}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+  
+% \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+
+
+\fancypagestyle{clearance}{\fancyhf{}\renewcommand{\headrulewidth}{0pt}\fancyfoot[L]{
+    \small{\faLock \, Active TS/SCI Clearance}
+}}
+
+
+
+% skills bubbles
+\usepackage{tcolorbox}
+\newcommand{\skillbox}[1]{
+  \begin{tcolorbox}[
+    hbox,
+    height=1.5em,
+    halign=center,
+    valign=center,colframe=black,
+    colback=gray!25,
+    boxsep=-7pt,
+    arc=2mm,
+    boxrule=1pt,
+    % beforeafter skip balanced=1pt,
+    nobeforeafter
+    ]
+  {\small #1}
+  \end{tcolorbox}%
+}
+
+
+
+\begin{document}
+
+\setlength{\footskip}{8mm}      % increase footer padding a bit
+\thispagestyle{clearance}
+
+
+
+%----------HEADING----------
+
+\begin{minipage}[t]{0.68\textwidth}
+  \vspace{-30pt}
+  \textbf{\Huge \scshape Russell Schwartz} \\
+  Computer Science Researcher and AI Developer
+\end{minipage}
+\hfill
+\begin{minipage}[]{0.30\textwidth}
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{cl}
+    \faCloud & \href{www.russ-stuff.com}{www.russ-stuff.com} \\
+    \faGithub & \href{https://github.com/rschwa6308}{github.com/rschwa6308} \\
+    \faEnvelope & \href{mailto:russell.w.schwartz@gmail.com}{russell.w.schwartz@gmail.com} \\
+    \faPhone & 443-472-8770 \\
+   \end{tabular}
+\end{minipage}
+
+
+% Options for website icon
+% - \faHandORight
+% - \faGlobe
+% - \faLink
+% - \faCloud
+% - \faHome
+
+\vspace{10pt}
+
+
+\begin{minipage}[t]{0.56\textwidth}
+
+%----------------EDUCATION----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingTwo
+      {Carnegie Mellon University}{Aug 2022 -- Dec 2023}
+      {Master of Science in Computer Science}{Pittsburgh, PA}
+      {}{}
+
+      \vspace*{-10pt}
+
+    \resumeSubheadingTwo
+      {University of Maryland \textnormal{\small (4.00 GPA)}}{Aug 2018 -- May 2022}
+      {Bachelor of Science in Computer Science}{College Park, MD}
+      {Bachelor of Science in Mathematics}
+
+
+    \vspace*{-5pt}
+    
+    % \resumeSubSubheading
+    % {\textbf{Honors}: \emph{Summa Cum Laude} - 4.00 GPA}{}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Johns Hopkins Applied Physics Lab}{May 2021 -- Aug 2021}
+    {Intelligent Systems Intern}{Laurel, MD}
+    \resumeItemListStart
+      \resumeItem{Developed tooling in python, C++, and fortran to optimize the flight-plan of  aircraft under a complex objective function involving the communication between an onboard device and an orbital satellite}
+      \resumeItem{Utilized modern non-linear solvers in conjunction with legacy high-fidelity physics simulations}
+      % \resumeItem{Created a system for testing automated network security analysis tools (such as APL's AVRA) on simulated networks repeatably. Network parameters include overall topology, OS types/versions, and software distributions. The resulting network is automatically virtualized via Docker and GNS3, and the testing procedure is run autonomously.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {NASA Jet Propulsion Lab}{Jan 2021 -- April 2021}
+    {Robotics \& Artificial Intelligence Intern}{Pasadena, CA}
+    \resumeItemListStart
+      \resumeItem{Worked with JPL roboticists on Mars 2020 mission to investigate methods for terrain-relative navigation using monocular cameras for robots operating in GPS-denied areas or planetary rovers, resulting in several publications}
+      \resumeItem{Developed robust methods for extracting salient terrain features (e.g. the peak of a distant hill) from an RGB image via semantic segmentation with DeepLab as well as traditional computer vision techniques}\vspace{-10pt}
+      \resumeItem{Studied the effectiveness of using observed features (in conjunction with an accurate map) to estimate robot pose; developed QGIS plugins to automate the analysis pipeline and applied to Jezero Crater}
+    \resumeItemListEnd
+  
+  \resumeSubheading
+    {Ncyber LLC}{May 2019 -- Aug 2019}
+    {Mobile Software Development Intern}{Columbia, MD}
+    \resumeItemListStart
+      \resumeItem{Developed a network analysis app for Android mobile devices that tests network speed and stability, aggregates user data across multiple devices, and generates real-time data visualizations}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+    {Treble Network}{April 2018 -- March 2019}
+    {Software Development \& Data Science Intern}{Baltimore, MD}
+    \resumeItemListStart
+      \resumeItem{Developed and tested applications for iOS, Android, and Web, and analyzed customer analytics using Firebase and Pandas}
+    \resumeItemListEnd
+    
+   
+  \resumeSubHeadingListEnd
+\vspace{-5pt}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.42\textwidth}
+  %-----------SKILLS-----------
+  \section{Skills}{\setlength{\baselineskip}{20pt}
+
+  \textbf{Languages}
+  \begin{flushleft}
+    \skillbox{Python} \skillbox{C/C++17} \skillbox{C\#} \skillbox{Java} \skillbox{JavaScript} \skillbox{TypeScript} \skillbox{Matlab}
+  \end{flushleft}
+
+  \vspace{-10pt}
+
+  \textbf{Frameworks}
+  \vspace{-8pt}
+  \begin{flushleft}
+    \skillbox{Numpy} \skillbox{Pandas} \skillbox{TensorFlow} \skillbox{Keras} \skillbox{PyTorch} \skillbox{Scikit-learn} \skillbox{OpenCV}
+  \end{flushleft}
+
+  \vspace{-10pt}
+
+  \textbf{Technical}
+  \vspace{-8pt}
+  \begin{flushleft}
+    \skillbox{Git} \skillbox{Gitlab CI/CD} \skillbox{Docker} \skillbox{Unix} \skillbox{\LaTeX}
+  \end{flushleft}
+
+  \vspace{-10pt}
+
+  \textbf{Non-Technical}
+  \vspace{-8pt}
+  \begin{flushleft}
+    \skillbox{Mathematical reasoning} \skillbox{Research formulation} \skillbox{Data visualization} \skillbox{Self-management}
+  \end{flushleft}
+
+  %-----------RESEARCH EXPERIENCE-----------
+  \section{Research Experience}
+  \textbf{CMU Robotics: AART Lab} \hspace{\fill} Sep 2022 -- Present
+
+  \setlength{\parindent}{15pt}
+  {\small Researched the deployment of a team of robots for simultaneous exploration and monitoring of a dynamic spatio-temporal environment. Phenomenon are modeled using a mixture of gaussian processes. Research is ongoing. }
+  }
+  \vspace*{6pt}
+
+  \noindent
+  \textbf{UMD Robotics: RAAS Lab} \hspace{\fill} Aug 2019 -- May 2022
+
+  \setlength{\parindent}{15pt}
+  {\small Investigated task-allocation algorithms for multi-agent robotic systems operating in highly failure-prone (and even adversarial) environments, where cooperation leads to higher chance of success. Presented findings at RSS 2020.}
+
+  \vspace*{6pt}
+
+  \noindent
+  \textbf{Gemstone Team LEMMA} \hspace{\fill} Aug 2018 -- May 2022
+    
+  \setlength{\parindent}{15pt}
+  {\small Developed novel methods to automatically detect and model the spread of extremism in niche online communities. Implemented sophisticated NLP tools (e.g. BERT) to automatically identify extreme content in a >5TB dataset. }
+\end{minipage}
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+\small{
+  \begin{itemize}
+      \item[-] J. Vander Hook, R. Schwartz, K. Ebadi, K. Coble, and C. Padgett, ``Topographical landmarks for ground-level terrain relative navigation on mars,'' in \textit{IEEEAerospace AeroConf}, 2022.
+
+      \item[-] K. Ebadi, K. Coble, D. Kogan, D. Atha, R. Schwartz, C. Padgett, and J. Vander Hook, ``Semantic  mapping in unstructured environments:  Toward autonomous localization of planetary robotic explorers,'' in \textit{IEEEAerospace AeroConf}, 2022.
+
+      \item[-] Schwartz, R., \& Tokekar, P. ``Robust Multi-Agent Task Assignment in Failure-Prone and Adversarial Environments'' in \textit{Robotics: Science and Systems}, 2020
+
+      \item[-] Schwartz, R., Long, M. ``Deriving unexpected constants from Pascal's Triangle''. \textit{HCC Journal of Research in Progress - First Ed.}, 2017
+  \end{itemize} 
+}
+
+
+
+
+
+
+
+% %-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+%           \resumeItemListStart
+%             \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+%             \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+%             \resumeItem{Visualized GitHub data to show collaboration}
+%             \resumeItem{Used Celery and Redis for asynchronous tasks}
+%           \resumeItemListEnd
+%       \resumeProjectHeading
+%           {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+%           \resumeItemListStart
+%             \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+%             \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+%             \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+%             \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+
+
+
+
+
+% %-----------LEADSERSHIP & VOLUNTEERING-----------
+% \section{Leadership \& Volunteer Work}
+%   \begin{itemize}
+%       % \item \textbf{Planet App} -- 
+%       \item \textbf{Boy Scouts of America} -- Served as Patrol Leader, Quartermaster, and Senior Patrol Leader for Boy Scout troop. Oversaw 80 younger scouts while organizing weekly meetings, camping trips, and service projects. (2012 - 2018)
+%       \item \textbf{Math Team Captain} -- Participated for 4 years in Howard High School mathematics team. Led the team to win first place in the division senior year. (2013 - 2017)
+%       \item \textbf{Math Honor Society Vice President} -- Organized meetings and wrote challenge problems for ~100 students. (2014 - 2017)
+%       \item \textbf{MS Chesapeake Challenge} -- Participated in a charity event for the National Multiple Sclerosis Society by raising over \$1,000 for MS research. Participated in the metric century bike ride and volunteered at rest stops.  (June 2016, 2017, and 2018)
+%   \end{itemize}
+
+
+
+% %-----------HONORS-----------
+% \section{Honors}
+%     \vspace{-15pt}
+%     \begin{tabularx}{\textwidth}{XXX}
+%         \begin{itemize}
+%             \itemsep 0pt
+%             \item UMD Banneker/Key Scholarship
+%             \item UMD Computer Science Dept. Honors
+%             \item ICPC 2018 Regional Finalist
+%         \end{itemize} &
+%         \begin{itemize}
+%             \itemsep 0pt
+%             \item National Merit Scholar
+%             \item Math, Tech, Science Honor Societies
+%             \item Winston Family Writing Award
+%         \end{itemize} &
+%         \begin{itemize}
+%             \itemsep 0pt
+%             \item BSA: Order of The Arrow
+%             \item First place at \textit{HoCo Hacks} `16 \& `17
+%             \item John Lockwood Mathematics Award
+%         \end{itemize}
+%     \end{tabularx}
+%     \vspace{-10pt}
+
+
+\end{document}
