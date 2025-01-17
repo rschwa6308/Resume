@@ -38,10 +38,10 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-.6in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -164,7 +164,7 @@
 \begin{minipage}[t]{0.68\textwidth}
   \vspace{-30pt}
   \textbf{\Huge \scshape Russell Schwartz} \\
-  Computer Science Researcher and AI Developer
+  Robotics Software Engineer
 \end{minipage}
 \hfill
 \begin{minipage}[]{0.30\textwidth}
@@ -218,36 +218,46 @@
 \resumeSubHeadingListStart
 
   \resumeSubheading
+    {Astrobotic Technology}{Aug 2023 -- Present}
+    {Perception Software Engineer III}{Pittsburgh, PA}
+    \resumeItemListStart
+    \resumeItem{Developed perception algorithms for autonomous terrain-relative navigation and hazard-detection for the Griffin lunar lander}
+    \resumeItem{Implemented flight software in C++ responsible for real-time sensor data processing, filtering, and decision making aboard the spacecraft\hspace{-4pt}}
+    \resumeItem{Worked with a variety of sensors: monocoluar camera, stero cameras, LiDAR, doppler LiDAR, IMU, sun-tracker, star-tracker}
+    \resumeItem{Utilized modern robotics methods: feature extraction, visual odometry, fiducials, ICP, global pointcloud registration, Gaussian proccesses, surface meshes, uncertainty propogation, kalman filtering}
+    \resumeItem{Developed Python prototypes and simulations for early-stage testing and supported field testing of later-stage integrated systems}
+    \resumeItemListEnd
+
+  \resumeSubheading
     {Johns Hopkins Applied Physics Lab}{May 2021 -- Aug 2021}
     {Intelligent Systems Intern}{Laurel, MD}
     \resumeItemListStart
-      \resumeItem{Developed tooling in python, C++, and fortran to optimize the flight-plan of  aircraft under a complex objective function involving the communication between an onboard device and an orbital satellite}
+      \resumeItem{Developed tooling in Python and C++ to optimize motion planning for aircraft under complex objective functions involving the communication between an onboard device and an orbital satellite}
       \resumeItem{Utilized modern non-linear solvers in conjunction with legacy high-fidelity physics simulations}
-      % \resumeItem{Created a system for testing automated network security analysis tools (such as APL's AVRA) on simulated networks repeatably. Network parameters include overall topology, OS types/versions, and software distributions. The resulting network is automatically virtualized via Docker and GNS3, and the testing procedure is run autonomously.}
     \resumeItemListEnd
 
   \resumeSubheading
     {NASA Jet Propulsion Lab}{Jan 2021 -- April 2021}
-    {Robotics \& Artificial Intelligence Intern}{Pasadena, CA}
+    {Robotics \& Autonomy Intern}{Pasadena, CA}
     \resumeItemListStart
-      \resumeItem{Worked with JPL roboticists on Mars 2020 mission to investigate methods for terrain-relative navigation using monocular cameras for robots operating in GPS-denied areas or planetary rovers, resulting in several publications}
-      \resumeItem{Developed robust methods for extracting salient terrain features (e.g. the peak of a distant hill) from an RGB image via semantic segmentation with DeepLab as well as traditional computer vision techniques}\vspace{-10pt}
-      \resumeItem{Studied the effectiveness of using observed features (in conjunction with an accurate map) to estimate robot pose; developed QGIS plugins to automate the analysis pipeline and applied to Jezero Crater}
+      \resumeItem{Worked with the Mars 2020 team to investigate methods for ground-level terrain-relative navigation using onboard rover cameras}
+      \resumeItem{Developed robust methods for extracting salient terrain features from imagery via semantic segmentation as well as conventional vision techniques}
+      \resumeItem{Modeled the effectiveness of using observed features in conjunction with an accurate map to estimate rover pose}
     \resumeItemListEnd
   
-  \resumeSubheading
-    {Ncyber LLC}{May 2019 -- Aug 2019}
-    {Mobile Software Development Intern}{Columbia, MD}
-    \resumeItemListStart
-      \resumeItem{Developed a network analysis app for Android mobile devices that tests network speed and stability, aggregates user data across multiple devices, and generates real-time data visualizations}
-    \resumeItemListEnd
+  % \resumeSubheading
+  %   {Ncyber LLC}{May 2019 -- Aug 2019}
+  %   {Mobile Software Development Intern}{Columbia, MD}
+  %   \resumeItemListStart
+  %     \resumeItem{Developed a network analysis app for Android mobile devices that tests network speed and stability, aggregates user data across multiple devices, and generates real-time data visualizations}
+  %   \resumeItemListEnd
     
-    \resumeSubheading
-    {Treble Network}{April 2018 -- March 2019}
-    {Software Development \& Data Science Intern}{Baltimore, MD}
-    \resumeItemListStart
-      \resumeItem{Developed and tested applications for iOS, Android, and Web, and analyzed customer analytics using Firebase and Pandas}
-    \resumeItemListEnd
+    % \resumeSubheading
+    % {Treble Network}{April 2018 -- March 2019}
+    % {Software Development \& Data Science Intern}{Baltimore, MD}
+    % \resumeItemListStart
+    %   \resumeItem{Developed and tested applications for iOS, Android, and Web, and analyzed customer analytics using Firebase and Pandas}
+    % \resumeItemListEnd
     
    
   \resumeSubHeadingListEnd
@@ -260,7 +270,7 @@
 
   \textbf{Languages}
   \begin{flushleft}
-    \skillbox{Python} \skillbox{C/C++17} \skillbox{C\#} \skillbox{Java} \skillbox{JavaScript} \skillbox{TypeScript} \skillbox{Matlab}
+    \skillbox{Python} \skillbox{C++17} \skillbox{Rust} \skillbox{C\#} \skillbox{Java} \skillbox{JavaScript}  \skillbox{Matlab}
   \end{flushleft}
 
   \vspace{-10pt}
@@ -268,7 +278,7 @@
   \textbf{Frameworks}
   \vspace{-8pt}
   \begin{flushleft}
-    \skillbox{Numpy} \skillbox{Pandas} \skillbox{TensorFlow} \skillbox{Keras} \skillbox{PyTorch} \skillbox{Scikit-learn} \skillbox{OpenCV}
+    \skillbox{Numpy} \skillbox{OpenCV} \skillbox{Open3D} \skillbox{Eigen} \skillbox{PCL} \skillbox{GDAL} \skillbox{PyTorch} \skillbox{Scikit-learn} \skillbox{cFS} \skillbox{ROS 2}
   \end{flushleft}
 
   \vspace{-10pt}
@@ -276,7 +286,7 @@
   \textbf{Technical}
   \vspace{-8pt}
   \begin{flushleft}
-    \skillbox{Git} \skillbox{Gitlab CI/CD} \skillbox{Docker} \skillbox{Unix} \skillbox{\LaTeX}
+    \skillbox{Git} \skillbox{Gitlab CI/CD} \skillbox{Jira} \skillbox{Docker} \skillbox{\LaTeX}
   \end{flushleft}
 
   \vspace{-10pt}
@@ -284,15 +294,15 @@
   \textbf{Non-Technical}
   \vspace{-8pt}
   \begin{flushleft}
-    \skillbox{Mathematical reasoning} \skillbox{Research formulation} \skillbox{Data visualization} \skillbox{Self-management}
+    \skillbox{Mathematical modeling} \skillbox{Requirement tracking} \skillbox{Data visualization} \skillbox{Technical communication}
   \end{flushleft}
 
   %-----------RESEARCH EXPERIENCE-----------
   \section{Research Experience}
-  \textbf{CMU Robotics: AART Lab} \hspace{\fill} Sep 2022 -- Present
+  \textbf{CMU Robotics: AART Lab} \hspace{\fill} Sep 2022 -- Feb 2023
 
   \setlength{\parindent}{15pt}
-  {\small Researching the deployment of a team of robots for simultaneous exploration and monitoring of a dynamic spatio-temporal environment. Phenomenon are modeled using a mixture of gaussian processes. Research is ongoing. }
+  {\small Evaluated methods (both classical and learning-based) for coordinating a team of robots for simultaneous exploration and monitoring of dynamic environments. Developed controllers for a swarm of Khepera mobile robots. }
   }
   \vspace*{6pt}
 
@@ -300,29 +310,29 @@
   \textbf{UMD Robotics: RAAS Lab} \hspace{\fill} Aug 2019 -- May 2022
 
   \setlength{\parindent}{15pt}
-  {\small Investigated task-allocation algorithms for multi-agent robotic systems operating in highly failure-prone (and even adversarial) environments, where cooperation leads to higher chance of success. Presented findings at RSS 2020.}
+  {\small Investigated task-allocation algorithms for multi-agent robotic systems operating in highly failure-prone and adversarial environments. Developed a near-optimal planning solution under independence assumptions. }
 
   \vspace*{6pt}
 
   \noindent
-  \textbf{Gemstone Team LEMMA} \hspace{\fill} Aug 2018 -- May 2022
+  \textbf{UMD LEMMA Group} \hspace{\fill} Aug 2018 -- May 2022
     
   \setlength{\parindent}{15pt}
-  {\small Developed novel methods to automatically detect and model the spread of extremism in niche online communities. Implemented sophisticated NLP tools (including BERT) to automatically identify extreme content in a >5TB dataset. }
+  {\small Worked with early large language-model BERT to develop novel methods for detecting extremist content in niche online communities. Implemented tooling for processing large (>50TB) datasets and for fine-tune training of the model. }
 \end{minipage}
 
 
 %-----------PUBLICATIONS-----------
-\section{Publications}
+\section{Select Publications}
 \small{
   \begin{itemize}
-      \item[-] J. Vander Hook, R. Schwartz, K. Ebadi, K. Coble, and C. Padgett, ``Topographical landmarks for ground-level terrain relative navigation on mars,'' in \textit{IEEEAerospace AeroConf}, 2022.
+      \item[-] R. Schwartz, Z. Mattis, C. Owens, M. Yothers, B. Khatiwada, A. Horchler, et al., ``Hazard Detection LiDAR System for Robotic Lunar Landers: Flight Test Results'' in \textit{AIAA SciTech}, 2025
 
-      \item[-] K. Ebadi, K. Coble, D. Kogan, D. Atha, R. Schwartz, C. Padgett, and J. Vander Hook, ``Semantic  mapping in unstructured environments:  Toward autonomous localization of planetary robotic explorers,'' in \textit{IEEEAerospace AeroConf}, 2022.
+      \item[-] J. Vander Hook, R. Schwartz, K. Ebadi, K. Coble, and C. Padgett, ``Topographical landmarks for ground-level terrain relative navigation on mars,'' in \textit{IEEEAerospace AeroConf}, 2022
 
-      \item[-] Schwartz, R., \& Tokekar, P. ``Robust Multi-Agent Task Assignment in Failure-Prone and Adversarial Environments'' in \textit{Robotics: Science and Systems}, 2020
+      \item[-] K. Ebadi, K. Coble, D. Kogan, D. Atha, R. Schwartz, C. Padgett, and J. Vander Hook, ``Semantic  mapping in unstructured environments:  Toward autonomous localization of planetary robotic explorers,'' in \textit{IEEEAerospace AeroConf}, 2022
 
-      \item[-] Schwartz, R., Long, M. ``Deriving unexpected constants from Pascal's Triangle''. \textit{HCC Journal of Research in Progress - First Ed.}, 2017
+      \item[-] R. Schwartz, P. Tokekar ``Robust Multi-Agent Task Assignment in Failure-Prone and Adversarial Environments'' in \textit{Robotics: Science and Systems}, 2020
   \end{itemize} 
 }
 
